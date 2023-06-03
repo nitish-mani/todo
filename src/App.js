@@ -1,4 +1,4 @@
-import logo from "./logo.svg";
+// import logo from "./logo.svg";
 import "./App.css";
 import TodoList from "./component/todoList";
 import { useEffect, useState } from "react";
@@ -39,9 +39,9 @@ function App() {
 
   function local() {
     if (dataArray)
-      dataArray.map((items) => {
-        localStorage.setItem(items.key, items.data);
-      });
+      dataArray.map((items) => 
+        localStorage.setItem(items.key, items.data)
+      );
   }
 
   function le() {
